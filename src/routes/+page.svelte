@@ -8,6 +8,9 @@ This is your page!
   import ArticleBody from '$lib/components/ArticleBody.svelte';
   import Image from '$lib/components/Image.svelte';
   import RelatedLinks from '$lib/components/RelatedLinks.svelte';
+  import ReadMore from '$lib/components/ReadMore.svelte';
+  import StreamingCost from '$lib/components/StreamingCost.svelte';
+  import TipCalculator from '$lib/components/TipCalculator.svelte';
 
   // Article metadata
   let headline = 'Become a force for good. Join our next class.';
@@ -56,6 +59,8 @@ This is your page!
       We fashioned a school to teach the latest storytelling, entrepreneurial, and technological skills alongside reporting, writing, and ethics. Beyond that, we’ve crafted a culture that spurns complacency, that isn’t afraid to pivot before the ground under us shifts.
     </p>
 
+    <TipCalculator />
+
     <p>
       Our mission is to serve the public interest – by training new journalists from varied economic, racial, and cultural backgrounds who will bring much-needed diversity to newsrooms, by helping mid-career journalists retool their skills, and by partnering with other media organizations to find new paths to excellence.
     </p>
@@ -83,6 +88,31 @@ This is your page!
     <p>
       We invite you to be part of our world.
     </p>
+
+    <ReadMore title="About This Quiz">
+      <p>
+        The data for the quiz and maps shown here come from over
+        350,000 survey responses collected from August to October 2013
+        by Josh Katz, a graphics editor for the New York Times who developed
+        this quiz and has since written “Speaking American,” a visual
+        exploration of American regional dialects.
+      </p>
+
+      <p>
+        Most of the questions used in this quiz are based on those in
+        the Harvard Dialect Survey, a linguistics project begun in 2002 by
+        Bert Vaux and Scott Golder. The original questions and results for
+        that survey can be found on Dr. Vaux’s current website.
+      </p>
+
+      <p>
+        The colors on the large heat map correspond to the probability
+        that a randomly selected person in that location would respond
+        to a randomly selected survey question the same way that you did.
+        The three smaller maps show which answer most contributed to those
+        cities being named the most (or least) similar to you.
+        </p>
+    </ReadMore>
   </ArticleBody>
 
   <!-- Related Stories: Links to other articles -->
